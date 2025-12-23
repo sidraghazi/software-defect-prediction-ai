@@ -24,7 +24,7 @@ This project uses datasets from the **PROMISE Software Engineering Repository**,
 
 ### Dataset Source
 PROMISE Software Engineering Repository (NASA datasets):  
-🔗 https://www.kaggle.com/datasets/edqian/twitter-climate-change-sentiment-dataset
+🔗 https://www.kaggle.com/datasets/radowanulhaque/software-defect?resource=download 
 
 
 In this project, the **CM1 dataset** was used for training and evaluation.
