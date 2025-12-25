@@ -97,5 +97,41 @@ Early defect prediction contributes to sustainable software systems by:
 - matplotlib  
 
 ---
+## How to Run
+
+To reproduce the software defect prediction experiment:
+
+1. Clone the repository; https://github.com/sidraghazi/software-defect-prediction-ai
+2. Navigate into the project directory: cd software-defect-prediction-ai
+3. Create a virtual environment (recommended):  cd software-defect-prediction-ai
+4. Activate the environment:
+- Windows:
+  ```
+  venv\Scripts\activate
+  ```
+- macOS/Linux:
+  ```
+  source venv/bin/activate
+  ```
+5. Install dependencies
+6. Run the model
+
+---
+## Sample Output
+
+Example model performance on the CM1 dataset:
+Accuracy: 0.91
+
+Classification Report:
+precision recall f1-score support
+
+Non-Defective 0.92 0.92 0.92
+Defective 0.59 1.00 0.74
+
+
+The model prioritizes **high recall for defect-prone modules**, which is desirable in software testing scenarios where missing defects is more costly than inspecting additional modules.
+
+
+
 
 
