@@ -21,6 +21,9 @@ This project uses datasets from the **PROMISE Software Engineering Repository**,
 - Each instance represents a software module
 - Metrics describe size, complexity, and coupling characteristics
 - The target variable indicates whether a module is **defect-prone**
+- In PROMISE datasets:
+# 'defects' = 1 means defect-prone
+# 'defects' = 0 means non-defect
 
 ### Dataset Source
 PROMISE Software Engineering Repository (NASA datasets):  
@@ -120,16 +123,27 @@ To reproduce the software defect prediction experiment:
 ## Sample Output
 
 Example model performance on the CM1 dataset:
-Accuracy: 0.91
+Accuracy: 0.93
 
 Classification Report:
-precision recall f1-score support
 
-Non-Defective 0.92 0.92 0.92
-Defective 0.59 1.00 0.74
+              precision    recall  f1-score   support
+
+Non-Defective     1.00      0.92      0.96        90
+Defective         0.59      1.00      0.74        10
+
+accuracy                              0.93       100
+macro avg         0.79      0.96      0.85       100
+weighted avg      0.96      0.93      0.94       100
 
 
-The model prioritizes **high recall for defect-prone modules**, which is desirable in software testing scenarios where missing defects is more costly than inspecting additional modules.
+The model achieves **perfect recall (1.00) for defect-prone modules**, ensuring that no defective components are missed.  
+Although precision for defect prediction is lower, this trade-off is acceptable in software testing contexts where identifying all potential defects is more important than minimizing false positives.
+
+The model is intended to support **test prioritization** rather than fully automated defect classification.
+
+
+
 
 
 
