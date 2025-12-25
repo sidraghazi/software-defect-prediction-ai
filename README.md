@@ -22,8 +22,8 @@ This project uses datasets from the **PROMISE Software Engineering Repository**,
 - Metrics describe size, complexity, and coupling characteristics
 - The target variable indicates whether a module is **defect-prone**
 - In PROMISE datasets:
-# 'defects' = 1 means defect-prone
-# 'defects' = 0 means non-defect
+  'defects' = 1 means defect-prone
+  'defects' = 0 means non-defect
 
 ### Dataset Source
 PROMISE Software Engineering Repository (NASA datasets):  
@@ -132,7 +132,7 @@ Classification Report:
 Non-Defective     1.00      0.92      0.96        90
 Defective         0.59      1.00      0.74        10
 
-accuracy                              0.93       100
+accuracy                            0.93       100
 macro avg         0.79      0.96      0.85       100
 weighted avg      0.96      0.93      0.94       100
 
