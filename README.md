@@ -126,15 +126,14 @@ Example model performance on the CM1 dataset:
 Accuracy: 0.93
 
 Classification Report:
+precision recall f1-score support
 
-              precision    recall  f1-score   support
+Non-Defective 1.00 0.92 0.96 90
+Defective 0.59 1.00 0.74 10
 
-Non-Defective     1.00      0.92      0.96        90
-Defective         0.59      1.00      0.74        10
-
-accuracy                            0.93       100
-macro avg         0.79      0.96      0.85       100
-weighted avg      0.96      0.93      0.94       100
+accuracy 0.93 100
+macro avg 0.79 0.96 0.85 100
+weighted avg 0.96 0.93 0.94 100
 
 
 The model achieves **perfect recall (1.00) for defect-prone modules**, ensuring that no defective components are missed.  
